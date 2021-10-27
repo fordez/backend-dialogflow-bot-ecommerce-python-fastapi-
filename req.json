@@ -1,0 +1,50 @@
+{
+    'responseId': 'd8f502e5-cef3-4017-8cd2-de2aee313d5f-cad07fe1',
+    'queryResult': {
+        'queryText': 'hola fordez', 
+        'parameters': {},
+        'allRequiredParamsPresent': True, 
+        'fulfillmentText': 'hola fordez....',
+        'fulfillmentMessages': [
+            {
+                'text': {
+                    'text': ['hola fordez....']
+                }
+            }
+        ], 
+        'outputContexts': [
+        {
+            'name': 'projects/chatrobot-1dd75/agent/sessions/0662e18b-7843-392f-8305-35f026420555/contexts/__system_counters__', 
+            'parameters': {
+                'no-input': 0.0, 'no-match': 0.0
+            }
+        }
+    ], 
+    'intent': {
+        'name': 'projects/chatrobot-1dd75/agent/intents/81ed76a1-6c85-43f0-91df-2114f94b1eb2', 
+        'displayName': 'saludo'
+        },
+    'intentDetectionConfidence': 1.0, 
+    'languageCode': 'es'
+    
+    }, 
+    'originalDetectIntentRequest': {
+        'source': 'facebook', 
+        'payload': {
+            'data': {
+                'message': {
+                    'mid': 'm_JsD0J8PRlUKybW2cOsiwaKVhbgMF8KHjLXz7mzE035EegSPYeOxae6ft1YFx0DZTJwjq0rLAC4Yffzj21F9Crg',
+                    'text': 'hola fordez'
+                    }, 
+                'sender': {
+                    'id': '3499442773431846'
+                    },
+                'timestamp': '1635286512510', 
+                'recipient': {
+                    'id': '108028850539200'
+                    }
+                }
+            }
+        }, 
+    'session': 'projects/chatrobot-1dd75/agent/sessions/0662e18b-7843-392f-8305-35f026420555'
+}
