@@ -1,9 +1,27 @@
-from typing import Optional, List, Dict, Any, Text
+from typing import Optional, Dict, Any
 from pydantic import BaseModel
 
 
+class Sender(BaseModel):
+    id: str
+
+
+class Recipient(BaseModel):
+    id: str
+
+
+class Message(BaseModel):
+    text: str
+
+
+class Data(BaseModel):
+    sender: Sender
+    recipient: Recipient
+    message: Message
+
+
 class Payload(BaseModel):
-    data: Dict[str, Any]
+    data: Data
 
 
 class RequestOriginal(BaseModel):
@@ -12,13 +30,10 @@ class RequestOriginal(BaseModel):
 
 
 class Intent(BaseModel):
-    name: str
     displayName: str
 
 
 class RequestNlp(BaseModel):
     intent: Intent
     parameters: Dict[str, Any]
-    queryText: str
     languageCode: str
-    outputContexts: Dict[str, Any]
